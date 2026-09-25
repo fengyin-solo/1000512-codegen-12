@@ -36,3 +36,9 @@ def health() -> dict[str, object]:
 def overview() -> dict[str, object]:
     """运营概览：把各业务模块的待处理量汇总成看板卡片。"""
     return store.overview()
+
+
+@app.get("/api/overview/sections")
+def overview_sections() -> dict[str, object]:
+    """工区分区看板：按工区归集今日新增、待处理、异常量，并给出各模块待办清单。"""
+    return store.section_overview()
