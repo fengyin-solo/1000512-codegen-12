@@ -33,3 +33,20 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.area-board { margin-top: 20px; }
+.area-board-title { margin: 0; font-size: 15px; }
+.board-placeholder { background: #fff; border: 1px dashed var(--border); border-radius: 8px; padding: 16px; color: var(--muted); font-size: 13px; }
+.area-row { cursor: pointer; }
+.area-row.area-active td { background: #eef4ff; }
+.area-detail { margin-top: 12px; }
+.area-detail-title { margin: 0 0 8px; font-size: 14px; }
+.area-modules { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.area-module { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.area-module-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.area-module-title { color: var(--brand); text-decoration: none; font-size: 13px; font-weight: 600; }
+.area-module-stats { color: var(--muted); font-size: 12px; }
+.todo-list { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.todo-list li { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.todo-status { color: var(--muted); font-size: 12px; }
+.todo-tag { font-size: 12px; color: #b42318; border: 1px solid #b42318; border-radius: 4px; padding: 0 4px; }
+.todo-empty { color: var(--muted); font-size: 12px; margin: 8px 0 0; }
